@@ -7,7 +7,7 @@ A simple Filament v4 package that adds a copyright footer to all your Filament p
 1. Install the package via Composer:
 
 ```bash
-composer require yourname/filament-footer
+composer require tapp/filament-footer
 ```
 
 2. Publish the views (optional, if you want to customize the footer template):

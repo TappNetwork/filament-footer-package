@@ -1,13 +1,13 @@
 {
-    "name": "yourname/filament-footer",
+    "name": "tapp/filament-footer",
     "description": "A Filament v4 package to add copyright footer to all panels",
     "type": "filament-plugin",
     "keywords": ["filament", "laravel", "footer", "copyright"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Your Name",
-            "email": "your.email@example.com"
+            "name": "Tapp Network",
+            "email": "dev@tappnetwork.com"
         }
     ],
     "require": {
@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "YourName\\FilamentFooter\\": "src/"
+            "Tapp\\FilamentFooter\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "YourName\\FilamentFooter\\FooterServiceProvider"
+                "Tapp\\FilamentFooter\\FooterServiceProvider"
             ]
         }
     },

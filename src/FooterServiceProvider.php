@@ -1,6 +1,6 @@
 <?php
 
-namespace YourName\FilamentFooter;
+namespace Tapp\FilamentFooter;
 
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;

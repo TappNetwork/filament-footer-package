@@ -1,6 +1,6 @@
 <?php
 
-namespace YourName\FilamentFooter\Components;
+namespace Tapp\FilamentFooter\Components;
 
 use Illuminate\View\Component;
 use Illuminate\View\View;
