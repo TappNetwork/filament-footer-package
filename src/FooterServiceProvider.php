@@ -31,8 +31,8 @@ class FooterServiceProvider extends ServiceProvider
         ], 'filament-footer-views');
 
         FilamentAsset::register([
-            Css::make('filament-footer', __DIR__ . '/../resources/dist/filament-footer.css'),
-        ], 'yourname/filament-footer');
+            Css::make('filament-footer', __DIR__ . '/../resources/dist/css/filament-footer.css'),
+        ], 'tapp/filament-footer');
 
         $this->app->booted(function () {
             foreach (Filament::getPanels() as $panel) {
