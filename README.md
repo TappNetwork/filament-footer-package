@@ -60,8 +60,8 @@ The footer includes:
 ## Requirements
 
 - PHP 8.1+
-- Laravel 9+
-- Filament 3.x
+- Laravel 11+
+- Filament 4.x
 
 ## License
 
