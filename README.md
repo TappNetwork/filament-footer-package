@@ -1,6 +1,6 @@
 # Filament Footer Package
 
-A simple Filament v4 package that adds a copyright footer to all your Filament panels.
+A simple Filament v4 package that adds a copyright footer to all your Filament panels with Tapp Network branding.
 
 ## Installation
 
@@ -10,60 +10,52 @@ A simple Filament v4 package that adds a copyright footer to all your Filament p
 composer require yourname/filament-footer
 ```
 
-2. Publish the configuration file:
-
-```bash
-php artisan vendor:publish --tag="filament-footer-config"
-```
-
-3. Publish the views (optional, if you want to customize the footer template):
+2. Publish the views (optional, if you want to customize the footer template):
 
 ```bash
 php artisan vendor:publish --tag="filament-footer-views"
 ```
 
-## Configuration
-
-After publishing the config file, you can find it at `config/filament-footer.php`. Here are the available options:
-
-```php
-return [
-    'copyright' => '© {year} Your Company',  // Copyright text
-    'show_links' => false,                   // Show additional links
-    'privacy_link' => null,                  // Privacy policy URL
-    'terms_link' => null,                    // Terms of service URL
-    'position' => 'inline',                  // 'inline' or 'fixed'
-    'css_classes' => '',                     // Additional CSS classes
-];
-```
-
 ## Usage
 
-The footer will automatically appear at the bottom of all your Filament panels once the package is installed and configured.
+The footer will automatically appear at the bottom of all your Filament panels once the package is installed. It displays:
 
-### Customization
-
-You can customize the footer appearance by:
-
-1. **Modifying the configuration**: Edit `config/filament-footer.php` to change the copyright text, links, and positioning.
-
-2. **Customizing the view**: After publishing the views, you can modify `resources/views/vendor/filament-footer/footer.blade.php`.
-
-3. **Adding custom CSS**: Use the `css_classes` configuration option to add custom CSS classes.
-
-## Example Configuration
-
-```php
-// config/filament-footer.php
-return [
-    'copyright' => '© {year} My Awesome Company',
-    'show_links' => true,
-    'privacy_link' => '/privacy-policy',
-    'terms_link' => '/terms-of-service',
-    'position' => 'inline',
-    'css_classes' => 'my-custom-footer',
-];
 ```
+{app.name} is provided by Tapp Network. © 2026 Tapp Network. All rights reserved.
+```
+
+Where `{app.name}` is your application's name from `config('app.name')`.
+
+## Footer Content
+
+The footer displays:
+- Your application name (from `config('app.name')`)
+- "is provided by" text
+- "Tapp Network" as a clickable link to https://tappnetwork.com
+- Copyright notice with current year
+
+## Customization
+
+You can customize the footer by publishing the views:
+
+```bash
+php artisan vendor:publish --tag="filament-footer-views"
+```
+
+Then modify `resources/views/vendor/filament-footer/footer.blade.php` to change:
+- The text content
+- Link destinations
+- Styling and layout
+- Add additional links or information
+
+## Styling
+
+The footer includes:
+- Responsive design
+- Dark mode support
+- Centered text layout
+- Border separator
+- Proper color contrast for accessibility
 
 ## Requirements
 
