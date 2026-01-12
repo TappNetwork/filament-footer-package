@@ -5,6 +5,7 @@ namespace Tapp\FilamentFooter;
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
+use Filament\Support\RenderHooks\PanelsRenderHook;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -37,7 +38,7 @@ class FooterServiceProvider extends ServiceProvider
         $this->app->booted(function () {
             foreach (Filament::getPanels() as $panel) {
                 $panel->renderHook(
-                    'panels::footer.end',
+                    PanelsRenderHook::FOOTER,
                     fn (): string => View::make('filament-footer::footer')->render()
                 );
             }
