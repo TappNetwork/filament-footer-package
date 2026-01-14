@@ -1,16 +1,27 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     /*
     |--------------------------------------------------------------------------
-    | Copyright Text
+    | Company Name
     |--------------------------------------------------------------------------
     |
-    | The copyright text that will be displayed in the footer. You can use
-    | placeholders like {year} which will be automatically replaced.
+    | The company name that will be displayed in the footer copyright message.
     |
     */
-    'copyright' => '© {year} ' . env('APP_NAME', 'Your Company'),
+    'company_name' => env('FOOTER_COMPANY_NAME', 'Tapp Network'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Company URL
+    |--------------------------------------------------------------------------
+    |
+    | The company website URL that will be linked in the footer.
+    |
+    */
+    'company_url' => env('FOOTER_COMPANY_URL', 'https://tappnetwork.com'),
 
     /*
     |--------------------------------------------------------------------------
