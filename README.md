@@ -1,6 +1,12 @@
 # Filament Footer Package
 
-A configurable Filament v4 package that adds a customizable copyright footer to all your Filament panels with full translation support.
+A configurable Filament v4 / v5 package that adds a customizable copyright footer to all your Filament panels with full translation support.
+
+## Requirements
+
+- PHP 8.2+
+- Laravel 11+
+- Filament 4.x / 5.x
 
 ## Installation
 
@@ -117,12 +123,6 @@ The footer includes:
 - Centered text layout
 - Proper color contrast for accessibility
 - Tailwind CSS classes compatible with Filament
-
-## Requirements
-
-- PHP 8.1+
-- Laravel 11+
-- Filament 4.x
 
 ## License
 
