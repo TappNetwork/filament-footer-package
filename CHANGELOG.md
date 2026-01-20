@@ -2,6 +2,14 @@
 
 All notable changes to `Filament Footer` will be documented in this file.
 
+## v1.0.2 - 2026-01-20
+
+### What's Changed
+
+* Remove CSS file by @andreia in https://github.com/TappNetwork/filament-footer-package/pull/5
+
+**Full Changelog**: https://github.com/TappNetwork/filament-footer-package/compare/v1.0.1...v1.0.2
+
 ## v1.0.1 - 2026-01-20
 
 ### What's Changed
