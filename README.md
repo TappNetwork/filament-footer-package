@@ -1,6 +1,6 @@
 # Filament Footer Package
 
-A configurable Filament v4 / v5 package that adds a customizable copyright footer to all your Filament panels with full translation support.
+Adds a customizable copyright footer to all your Filament panels with full translation support.
 
 ## Requirements
 
