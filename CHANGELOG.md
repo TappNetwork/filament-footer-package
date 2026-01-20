@@ -2,6 +2,14 @@
 
 All notable changes to `Filament Footer` will be documented in this file.
 
+## v1.0.1 - 2026-01-20
+
+### What's Changed
+
+* Add Filament 5 support by @andreia in https://github.com/TappNetwork/filament-footer-package/pull/4
+
+**Full Changelog**: https://github.com/TappNetwork/filament-footer-package/compare/v1.0.0...v1.0.1
+
 ## v1.0.0 - 2026-01-15
 
 ### What's Changed
