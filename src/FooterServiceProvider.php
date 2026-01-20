@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace Tapp\FilamentFooter;
 
 use Filament\Facades\Filament;
-use Filament\Support\Assets\Css;
-use Filament\Support\Facades\FilamentAsset;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -37,10 +35,6 @@ class FooterServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../resources/lang' => lang_path('vendor/filament-footer'),
         ], 'filament-footer-translations');
-
-        FilamentAsset::register([
-            Css::make('filament-footer', __DIR__.'/../resources/dist/css/filament-footer.css'),
-        ], 'tapp/filament-footer');
 
         $this->app->booted(function () {
             foreach (Filament::getPanels() as $panel) {
