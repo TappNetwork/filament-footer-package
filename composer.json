@@ -27,5 +27,8 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "require-dev": {
+        "pestphp/pest": "^4.0|^5.0"
+    }
 }
